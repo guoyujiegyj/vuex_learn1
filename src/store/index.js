@@ -46,5 +46,11 @@ export default new Vuex.Store({
     }
   },
   modules: {
+  },
+  // getters用来将数据进行包装。
+  getters: {
+    showNum(state) {
+      return `当前数值时${state.count}`
+    }
   }
 })

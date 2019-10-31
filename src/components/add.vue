@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h3>当前count为：{{count}}</h3>
+    <!-- <h3>当前count为：{{count}}</h3> -->
+    <!--对通过getters包装的数据进行获取的第一张方式-->
+    <h3>{{$store.getters.showNum}}</h3>
     <button @click="addOne">+1</button>
     <button @click="addThree">+3</button>
     <button @click="addOneAsync">+1async</button>
