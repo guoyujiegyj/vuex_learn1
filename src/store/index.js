@@ -37,6 +37,12 @@ export default new Vuex.Store({
       setTimeout(()=>{
         context.commit('subThree',n)
       },1000)
+    },
+    // 异步加3
+    addThreeAsync(context,n){
+      setTimeout(()=>{  
+        context.commit('addThree',n)
+      },1000)
     }
   },
   modules: {
