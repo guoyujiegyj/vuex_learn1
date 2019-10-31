@@ -36,3 +36,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   //   count: 'count'
   // })
   （3）：使用.直接使用即可{{count}}
+  ### mutations里不能执行异步操作，如果执行，页面数据可以正常显示，但是state数据并没有被改变，这通过devTools可以监视到。

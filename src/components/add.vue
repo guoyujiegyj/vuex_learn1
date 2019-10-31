@@ -3,6 +3,7 @@
     <h3>当前count为：{{count}}</h3>
     <button @click="addOne">+1</button>
     <button @click="addThree">+3</button>
+    <button @click="addOneAsync">+1async</button>
     <hr>
   </div>
 </template>
@@ -20,6 +21,11 @@ export default {
     },
     addThree() {
       this.$store.commit('addThree',3)
+    },
+    // 异步加1
+    addOneAsync() {
+      // dispatch专门用来执行actions里的 方法
+      this.$store.dispatch('addAsync')
     }
   },
   // 将区局数据映射为当前组件的计算属性。

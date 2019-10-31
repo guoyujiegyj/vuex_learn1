@@ -3,6 +3,7 @@
     <h3>当前count为：{{$store.state.count}}</h3>
     <button @click='subO'>-1</button>
     <button @click='subT'>-3</button>
+    <button @click='subThreeAsync'>-3async</button>
     <hr>
   </div>
 </template>
@@ -23,6 +24,10 @@ export default {
     subT() {
       // 为mutations里的方法传参
       this.subThree(3)
+    },
+    //
+    subThreeAsync() {
+      this.$store.dispatch('subAsync',3)
     }
   }
 }
