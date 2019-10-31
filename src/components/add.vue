@@ -1,9 +1,7 @@
 <template>
-  <div>app</div>
+  <div>add</div>
 </template>
 <script>
-import Add from './components/add.vue'
-import Sub from './components/sub.vue'
 export default {
   data() {
     return {};
