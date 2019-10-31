@@ -7,6 +7,7 @@
   </div>
 </template>
 <script>
+// 导入mapState,用来获取$store的数据
 import { mapState } from 'vuex'
 export default {
   data() {

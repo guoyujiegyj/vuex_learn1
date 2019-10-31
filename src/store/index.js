@@ -12,8 +12,16 @@ export default new Vuex.Store({
     add(state){
       state.count++
     },
-    addThree(state){
-      state.count+=3
+    addThree(state,n){
+      state.count+=n
+    },
+    // 定义减1方法
+    subOne(state) {
+      state.count--
+    },
+    // 定义减3 方法
+    subThree(state,n) {
+      state.count-=n
     }
   },
   actions: {
